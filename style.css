@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.chart-container {
+  /* margin: 40px auto; */
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+#chart1 {
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Tooltip */
+#tooltip {
+  position: absolute;
+  visibility: hidden;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  pointer-events: none;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+/* Bar label */
+.barlabel {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Legend */
+.legendItem text {
+  font-size: 12px;
+  fill: #333;
+}
+
+.legendItem rect {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+/* Chart title */
+svg text.chart-title {
+  font-size: 18px;
+  font-weight: 700;
+  fill: #333;
+}
+
+/* SVG */
+svg {
+  overflow: visible;
+  display: block;
+}
